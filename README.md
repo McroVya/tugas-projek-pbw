@@ -1,5 +1,4 @@
-﻿@'
-# Sistem Informasi Peminjaman Barang & Inventaris Kampus
+﻿@'# Sistem Informasi Peminjaman Barang & Inventaris Kampus
 
 ## 1. Deskripsi Singkat & Latar Belakang Masalah
 Aplikasi berbasis web yang dirancang untuk membantu pengelolaan peminjaman barang inventaris kampus atau organisasi (seperti proyektor, laptop, kamera, dan alat laboratorium).
