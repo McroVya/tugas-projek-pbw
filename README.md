@@ -1,34 +1,38 @@
-﻿# Sistem Informasi Peminjaman Barang Inventaris
+﻿@'
+# Sistem Informasi Peminjaman Barang & Inventaris Kampus
 
-## 1. Latar Belakang Masalah & Manfaat Aplikasi
-### Latar Belakang Masalah
-Proses pencatatan peminjaman dan pengembalian barang inventaris saat ini masih dilakukan secara manual menggunakan buku log petugas. Cara konvensional ini menimbulkan beberapa kendala, seperti sulitnya melacak status ketersediaan barang secara cepat, rawan hilangnya riwayat peminjaman, serta kesulitan dalam memantau daftar peminjam yang melewati batas waktu pengembalian.
+## 1. Deskripsi Singkat & Latar Belakang Masalah
+Aplikasi berbasis web yang dirancang untuk membantu pengelolaan peminjaman barang inventaris kampus atau organisasi (seperti proyektor, laptop, kamera, dan alat laboratorium).
 
-### Manfaat Aplikasi
-- Mempermudah petugas dalam mencatat dan melacak transaksi peminjaman serta pengembalian barang secara terpusat.
-- Mempercepat pengecekan status ketersediaan barang inventaris secara real-time.
-- Mencegah hilangnya data riwayat peminjaman dan memudahkan pemantauan keterlambatan pengembalian.
+*Permasalahan yang diselesaikan:*
+- Pencatatan peminjaman barang sebelumnya masih dilakukan secara manual (risiko data hilang atau tercatat ganda).
+- Status ketersediaan barang (tersedia atau sedang dipinjam) sulit dipantau secara real-time.
+- Riwayat transaksi peminjaman tidak terdokumentasi dengan baik.
+- Admin membutuhkan sistem manajemen data inventaris yang terpusat dan mudah dikelola.
 
-## 2. Target Pengguna dan Kebutuhan Pengguna
-### PETUGAS / ADMIN
-- Membutuhkan halaman login untuk mengamankan akses pengelolaan data.
-- Membutuhkan ringkasan statistik di halaman dashboard (total barang/buku, sedang dipinjam, tersedia, dan terlambat kembali).
-- Membutuhkan fitur untuk menambah, mengubah, melihat, dan menghapus data peminjaman serta data inventaris.
+## 2. Target Pengguna Aplikasi
+- *Admin:* Bertanggung jawab penuh dalam mengelola data master (kategori, barang, pengguna/peminjam) serta memverifikasi status dan riwayat peminjaman.
+- *Peminjam (Mahasiswa/Petugas):* Pengguna yang dapat masuk ke sistem untuk melihat ketersediaan inventaris serta mengajukan permohonan peminjaman barang.
 
-### MAHASISWA
-- Membutuhkan informasi yang jelas mengenai ketersediaan barang/buku yang dapat dipinjam.
-- Membutuhkan pencatatan tanggal pinjam dan batas tanggal kembali yang transparan.
+## 3. Fitur Utama
+- *Autentikasi:* Sistem Login, Logout, dan Manajemen Sesi (Session).
+- *Dashboard Admin:* Menampilkan ringkasan statistik (jumlah total barang, barang tersedia, barang dipinjam, dan total transaksi).
+- *Manajemen Kategori:* Kelola kategori inventaris barang.
+- *Kelola Data Barang:* Tambah, edit, hapus, dan lihat detail inventaris.
+- *Kelola Peminjaman:* Pencatatan dan pembaruan status peminjaman (Menunggu, Dipinjam, Dikembalikan, Dibatalkan).
+- *Antarmuka Interaktif:* Tabel daftar data dengan dukungan pencarian/filter dan pagination menggunakan jQuery AJAX, serta penunjuk waktu (Real-time Clock) menggunakan JavaScript.
 
-## 3. Daftar Fitur Utama
-1. Autentikasi Pengguna (Login & Logout): Membatasi akses sistem hanya untuk petugas/pengguna terdaftar.
-2. Dashboard: Menampilkan informasi cepat jumlah total koleksi/barang, jumlah transaksi peminjaman aktif, dan jumlah pengembalian selesai.
-3. Manajemen Daftar Data Peminjaman: Menampilkan tabel daftar peminjaman lengkap dengan fitur pencarian, filter status (Dipinjam/Dikembalikan), serta tombol aksi ubah dan hapus.
-4. Form Transaksi Peminjaman & Pengembalian: Formulir untuk menginput data peminjam baru, memilih barang/buku yang dipinjam, menentukan tanggal pinjam/kembali, serta memperbarui status pengembalian.
+## 4. Tautan Wireframe & Desain UI
+Rancangan antarmuka (wireframe) untuk halaman Login, Pendaftaran, Dashboard, Daftar Data, dan Form telah disiapkan melalui tautan berikut:
+- [Tautan Canva Wireframe & Desain UI](https://www.canva.com/design/DAHYFneNfec/gcu8BCvlcrvVEZXzo4-0wA/edit)
+- [Tautan Alternatif Canva (View Link)](https://canva.link/hazrtb1yep7jh46)
 
-## 4. Wireframe Halaman Inti
-- Tautan Wireframe Canva: https://canva.link/hazrtb1yep7jh46
-
-## 5. Struktur Folder Awal
-- /asset : Menyimpan file aset gambar, ikon, dan styling.
-- /docs  : Menyimpan dokumentasi dan tautan rancangan wireframe.
-- /src   : Menyimpan source code utama aplikasi.
+## 5. Struktur Folder Awal Repository
+```text
+├── assets/             # Folder aset pendukung (CSS, JS, Gambar/Icon)
+├── config/             # Konfigurasi koneksi database dan session
+├── includes/           # Komponen modular (Header, Sidebar, Footer)
+├── uploads/            # Direktori penyimpanan foto barang (fitur opsional)
+├── index.php / login.html # Halaman utama / masuk
+├── dashboard.php       # Halaman dashboard admin
+└── README.md           # Dokumentasi proyek
