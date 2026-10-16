@@ -4,13 +4,13 @@
 Aplikasi berbasis web yang dirancang untuk membantu pengelolaan peminjaman barang inventaris kampus atau organisasi (seperti proyektor, laptop, kamera, dan alat laboratorium lainnya).
 
 *Permasalahan yang diselesaikan:*
-- Status ketersediaan barang (tersedia atau sedang dipinjam) sulit dipantau secara real-time.
-- Riwayat transaksi peminjaman tidak terdokumentasi dengan baik.
+- Status ketersediaan barang (tersedia atau sedang dipinjam) sulit dipantau secara real-time karena masih dipantau secara offline.
+- Riwayat transaksi peminjaman tidak terdokumentasi dengan baik (banyaknya kelalaian yang diakibatkan oleh administrator).
 - Admin membutuhkan sistem manajemen data inventaris yang terpusat dan mudah dikelola.
 
 ## 2. Target Pengguna Aplikasi
 - Admin: Bertanggung jawab penuh dalam mengelola data master (kategori, barang, pengguna/peminjam) serta memverifikasi status dan riwayat peminjaman.
-- Peminjam (Mahasiswa/Petugas):* Pengguna yang dapat masuk ke sistem untuk melihat ketersediaan inventaris serta mengajukan permohonan peminjaman barang.
+- Peminjam (Mahasiswa/Petugas): Pengguna yang dapat masuk ke sistem untuk melihat ketersediaan inventaris serta mengajukan permohonan peminjaman barang.
 
 ## 3. Fitur Utama
 - Autentikasi: Sistem Login, Logout, dan Manajemen Sesi (Session).
