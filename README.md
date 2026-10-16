@@ -26,10 +26,10 @@ Rancangan antarmuka (wireframe) untuk halaman Login, Pendaftaran, Dashboard, Daf
 
 ## 5. Struktur Folder Awal Repository
 ```text
-├── assets/             # Folder aset pendukung (CSS, JS, Gambar/Icon)
-├── config/             # Konfigurasi koneksi database dan session
-├── includes/           # Komponen modular (Header, Sidebar, Footer)
-├── uploads/            # Direktori penyimpanan foto barang (fitur opsional)
-├── index.php / login.html # Halaman utama / masuk
+├── assets/           
+├── config/      
+├── includes/     
+├── uploads/           
+├── index.php / login.html 
 ├── dashboard.php       # Halaman dashboard admin
 └── README.md           # Dokumentasi proyek
