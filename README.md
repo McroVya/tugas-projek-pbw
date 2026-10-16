@@ -13,23 +13,23 @@ Aplikasi berbasis web yang dirancang untuk membantu pengelolaan peminjaman baran
 - Peminjam (Mahasiswa/Petugas): Pengguna yang dapat masuk ke sistem untuk melihat ketersediaan inventaris serta mengajukan permohonan peminjaman barang.
 
 ## 3. Fitur Utama
-- Autentikasi: Sistem Login, Logout, dan Manajemen Sesi (Session).
+- Autentikasi: Sistem Login, Logout, dan Manajemen Sesi.
 - Dashboard Admin: Menampilkan ringkasan statistik (jumlah total barang, barang tersedia, barang dipinjam, dan total transaksi).
 - Manajemen Kategori: Kelola kategori inventaris barang.
 - Kelola Data Barang: Tambah, edit, hapus, dan lihat detail inventaris.
 - Kelola Peminjaman: Pencatatan dan pembaruan status peminjaman (Menunggu, Dipinjam, Dikembalikan, Dibatalkan).
-- Antarmuka Interaktif: Tabel daftar data dengan dukungan pencarian/filter dan pagination menggunakan jQuery AJAX, serta penunjuk waktu (Real-time Clock) menggunakan JavaScript.
+- Antarmuka Interaktif: Tabel daftar data dengan dukungan pencarian/filter dan pagination menggunakan jQuery AJAX, serta penunjuk waktu menggunakan JavaScript.
 
 ## 4. Tautan Wireframe & Desain UI
 Rancangan antarmuka (wireframe) untuk halaman Login, Pendaftaran, Dashboard, Daftar Data, dan Form telah disiapkan melalui tautan berikut:
 - [Tautan Canva Wireframe & Desain UI](https://www.canva.com/design/DAHYFneNfec/gcu8BCvlcrvVEZXzo4-0wA/edit)
 
 ## 5. Struktur Folder Awal Repository
-```text
 ├── assets/           
 ├── config/      
 ├── includes/     
 ├── uploads/           
-├── index.php / login.html 
-├── dashboard.php       # Halaman dashboard admin
-└── README.md           # Dokumentasi proyek
+├── README.md   
+├── dashboard.php
+├── index.php
+└── wireframe.md      
