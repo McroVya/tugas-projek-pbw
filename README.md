@@ -23,7 +23,6 @@ Aplikasi berbasis web yang dirancang untuk membantu pengelolaan peminjaman baran
 ## 4. Tautan Wireframe & Desain UI
 Rancangan antarmuka (wireframe) untuk halaman Login, Pendaftaran, Dashboard, Daftar Data, dan Form telah disiapkan melalui tautan berikut:
 - [Tautan Canva Wireframe & Desain UI](https://www.canva.com/design/DAHYFneNfec/gcu8BCvlcrvVEZXzo4-0wA/edit)
-- [Tautan Alternatif Canva (View Link)](https://canva.link/hazrtb1yep7jh46)
 
 ## 5. Struktur Folder Awal Repository
 ```text
