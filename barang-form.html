@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Form Barang — Inventaris Kampus</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="app-layout">
+    <aside class="sidebar" id="sidebar">
+      <a href="dashboard.html" class="brand">
+        <span class="brand-mark">IK</span>
+        <span>
+          <strong>Inventaris</strong>
+          <small>Campus system</small>
+        </span>
+      </a>
+      <div class="nav-label">MENU UTAMA</div>
+      <nav>
+        <a class="nav-link " href="dashboard.html"><span>▦</span> Dashboard</a>
+        <a class="nav-link active" href="barang.html"><span>▤</span> Data Barang</a>
+        <a class="nav-link " href="kategori.html"><span>▧</span> Kategori</a>
+        <a class="nav-link " href="peminjaman.html"><span>⇄</span> Peminjaman</a>
+        <a class="nav-link " href="pengguna.html"><span>♙</span> Pengguna</a>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="side-tip">
+          <span>✦</span>
+          <strong>Catatan</strong>
+          <p>Ini versi statis untuk demonstrasi. Perubahan data tidak disimpan ke database.</p>
+        </div>
+        <a class="nav-link" href="login.html"><span>↪</span> Keluar</a>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">☰</button>
+        <div>
+          <div class="breadcrumb">Workspace <span>/</span> Form Barang</div>
+          <div class="top-title">Form Barang</div>
+        </div>
+        <div class="top-user">
+          <div class="date-clock">
+            <span id="liveDate">Memuat tanggal...</span>
+            <strong id="liveClock">--:--:--</strong>
+          </div>
+          <div class="avatar">A</div>
+          <div class="user-name">
+            <strong>Administrator</strong>
+            <small>Demo statis</small>
+          </div>
+        </div>
+      </header>
+
+      <div class="page-content">
+        <div class="page-heading">
+          <div>
+            <h1>Tambah / edit barang</h1>
+            <p class="muted">Form statis untuk demonstrasi dan validasi dasar.</p>
+          </div>
+          <a class="btn secondary" href="barang.html">← Kembali</a>
+        </div>
+
+        <section class="panel form-panel">
+          <div class="panel-heading">
+            <div>
+              <h2>Informasi form barang</h2>
+              <p class="muted">Kolom bertanda wajib harus diisi.</p>
+            </div>
+          </div>
+          <form class="form-grid demo-form">
+            <label>
+              Kode barang
+              <input name="kode" placeholder="Contoh: BRG-006" required>
+            </label>
+            <label>
+              Nama barang
+              <input name="nama" placeholder="Nama barang" required>
+            </label>
+            <label>
+              Kategori
+              <select name="kategori" required>
+                <option value="">Pilih kategori</option>
+                <option>Elektronik</option>
+                <option>Multimedia</option>
+                <option>Laboratorium</option>
+              </select>
+            </label>
+            <label>
+              Lokasi
+              <input name="lokasi" placeholder="Contoh: Lab Komputer" required>
+            </label>
+            <label>
+              Stok total
+              <input type="number" name="stok_total" min="1" value="1" required>
+            </label>
+            <label>
+              Kondisi
+              <select name="kondisi" required>
+                <option value="">Pilih kondisi</option>
+                <option>Baik</option>
+                <option>Perlu perbaikan</option>
+                <option>Rusak</option>
+              </select>
+            </label>
+            <div class="form-actions">
+              <button class="btn primary" type="submit">Simpan data</button>
+              <a class="btn secondary" href="barang.html">Batal</a>
+            </div>
+          </form>
+        </section>
+      </div>
+
+      <footer class="footer">
+        © <span id="yearNow"></span> Sistem Peminjaman Inventaris <span>•</span> Versi HTML statis
+      </footer>
+    </main>
+  </div>
+  <script src="assets/app.js"></script>
+</body>
+</html>
