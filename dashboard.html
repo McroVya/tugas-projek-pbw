@@ -1,156 +1,121 @@
 <!doctype html>
 <html lang="id">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dashboard — Inventaris Kampus</title>
-  <link rel="stylesheet" href="assets/style.css">
-</head>
-<body>
-  <div class="app-layout">
-    <aside class="sidebar" id="sidebar">
-      <a href="dashboard.html" class="brand">
-        <span class="brand-mark">IK</span>
-        <span>
-          <strong>Inventaris</strong>
-          <small>Campus system</small>
-        </span>
-      </a>
-      <div class="nav-label">MENU UTAMA</div>
-      <nav>
-        <a class="nav-link active" href="dashboard.html"><span>▦</span> Dashboard</a>
-        <a class="nav-link" href="barang.html"><span>▤</span> Data Barang</a>
-        <a class="nav-link" href="kategori.html"><span>▧</span> Kategori</a>
-        <a class="nav-link" href="peminjaman.html"><span>⇄</span> Peminjaman</a>
-        <a class="nav-link" href="pengguna.html"><span>♙</span> Pengguna</a>
-      </nav>
-      <div class="sidebar-bottom">
-        <div class="side-tip">
-          <span>✦</span>
-          <strong>Catatan</strong>
-          <p>Pastikan status dan stok barang diperbarui setiap kali transaksi berubah.</p>
-        </div>
-        <a class="nav-link" href="login.html"><span>↪</span> Keluar</a>
-      </div>
-    </aside>
-
-    <main class="main-area">
-      <header class="topbar">
-        <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">☰</button>
-        <div>
-          <div class="breadcrumb">Workspace <span>/</span> Dashboard</div>
-          <div class="top-title">Dashboard</div>
-        </div>
-        <div class="top-user">
-          <div class="date-clock">
-            <span id="liveDate">Memuat tanggal...</span>
-            <strong id="liveClock">--:--:--</strong>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard — Inventaris Kampus</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <div class="app-layout">
+      <aside class="sidebar" id="sidebar">
+        <a href="dashboard.html" class="brand"
+          ><span class="brand-mark">IK</span
+          ><span
+            ><strong>Inventaris</strong><small>Campus system</small></span
+          ></a
+        >
+        <div class="nav-label">MENU UTAMA</div>
+        <nav>
+          <a class="nav-link active" href="dashboard.html"
+            ><span>▦</span> Dashboard</a
+          ><a class="nav-link" href="barang.html"><span>▤</span> Data Barang</a>
+        </nav>
+        <div class="sidebar-bottom">
+          <div class="side-tip">
+            <span>✦</span><strong>Catatan</strong>
+            <p>
+              Versi HTML hanya untuk demonstrasi saja. Jadi data yang di masukkan tidak disimpan ke
+              database.
+            </p>
           </div>
-          <div class="avatar">A</div>
-          <div class="user-name">
-            <strong>Administrator</strong>
-            <small>Demo statis</small>
-          </div>
+          <a class="nav-link" href="login.html"><span>↪</span> Keluar</a>
         </div>
-      </header>
-
-      <div class="page-content">
-        <div class="welcome-row">
+      </aside>
+      <main class="main-area">
+        <header class="topbar">
+          <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">
+            ☰
+          </button>
           <div>
-            <p class="eyebrow">RINGKASAN INVENTARIS</p>
-            <h1>Selamat datang, Administrator 👋</h1>
-            <p class="muted">Berikut ringkasan contoh kondisi inventaris kampus.</p>
+            <div class="breadcrumb">Workspace <span>/</span> Dashboard</div>
+            <div class="top-title">Dashboard</div>
           </div>
-          <a class="btn primary" href="peminjaman-form.html">＋ Transaksi baru</a>
-        </div>
-
-        <div class="stats-grid">
-          <article class="stat-card">
-            <div class="stat-top">
-              <span>Total stok barang</span>
-              <span class="stat-icon blue">▤</span>
+          <div class="top-user">
+            <div class="date-clock">
+              <span id="liveDate">Memuat tanggal...</span
+              ><strong id="liveClock">--:--:--</strong>
             </div>
-            <div class="stat-number">26</div>
-            <div class="stat-foot">Unit inventaris terdaftar</div>
-          </article>
-          <article class="stat-card">
-            <div class="stat-top">
-              <span>Barang tersedia</span>
-              <span class="stat-icon green">✓</span>
+            <div class="avatar">A</div>
+            <div class="user-name">
+              <strong>Administrator</strong><small>Ini Hanya Demo</small>
             </div>
-            <div class="stat-number">21</div>
-            <div class="stat-foot">Siap untuk dipinjam</div>
-          </article>
-          <article class="stat-card">
-            <div class="stat-top">
-              <span>Sedang dipinjam</span>
-              <span class="stat-icon orange">⇄</span>
-            </div>
-            <div class="stat-number">5</div>
-            <div class="stat-foot">Unit berada di peminjam</div>
-          </article>
-          <article class="stat-card">
-            <div class="stat-top">
-              <span>Total transaksi</span>
-              <span class="stat-icon purple">▣</span>
-            </div>
-            <div class="stat-number">12</div>
-            <div class="stat-foot">Contoh riwayat transaksi</div>
-          </article>
-        </div>
-
-        <section class="panel">
-          <div class="panel-heading">
+          </div>
+        </header>
+        <div class="page-content">
+          <div class="welcome-row">
             <div>
-              <h2>Transaksi terbaru</h2>
-              <p class="muted">Data contoh untuk demonstrasi.</p>
+              <p class="eyebrow">RINGKASAN SISTEM</p>
+              <h1>Selamat datang, Administrator 👋</h1>
+              <p class="muted">
+                Dashboard ringkas untuk demonstrasi sistem inventaris.
+              </p>
             </div>
-            <a class="text-link" href="peminjaman.html">Lihat semua →</a>
+            <a class="btn primary" href="barang.html">Lihat Data Barang →</a>
           </div>
-          <div class="table-wrap">
-            <table>
-              <thead>
-                <tr>
-                  <th>Peminjam</th>
-                  <th>Barang</th>
-                  <th>Tanggal pinjam</th>
-                  <th>Batas kembali</th>
-                  <th>Status</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><strong>Andi Pratama</strong></td>
-                  <td>Proyektor Epson <span class="muted">× 1</span></td>
-                  <td>20 Okt 2026</td>
-                  <td>27 Okt 2026</td>
-                  <td><span class="status dipinjam">Dipinjam</span></td>
-                </tr>
-                <tr>
-                  <td><strong>Siti Rahma</strong></td>
-                  <td>Laptop Lenovo <span class="muted">× 2</span></td>
-                  <td>21 Okt 2026</td>
-                  <td>28 Okt 2026</td>
-                  <td><span class="status menunggu">Menunggu</span></td>
-                </tr>
-                <tr>
-                  <td><strong>Budi Santoso</strong></td>
-                  <td>Tripod Kamera <span class="muted">× 2</span></td>
-                  <td>18 Okt 2026</td>
-                  <td>22 Okt 2026</td>
-                  <td><span class="status dikembalikan">Dikembalikan</span></td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="stats-grid">
+            <article class="stat-card">
+              <div class="stat-top">
+                <span>Total data</span><span class="stat-icon blue">▤</span>
+              </div>
+              <div class="stat-number">5</div>
+              <div class="stat-foot">Data contoh ditampilkan</div>
+            </article>
+            <article class="stat-card">
+              <div class="stat-top">
+                <span>Kondisi baik</span><span class="stat-icon green">✓</span>
+              </div>
+              <div class="stat-number">4</div>
+              <div class="stat-foot">Contoh data berkondisi baik</div>
+            </article>
+            <article class="stat-card">
+              <div class="stat-top">
+                <span>Perlu perbaikan</span
+                ><span class="stat-icon orange">!</span>
+              </div>
+              <div class="stat-number">1</div>
+              <div class="stat-foot">Contoh data perlu diperiksa</div>
+            </article>
+            <article class="stat-card">
+              <div class="stat-top">
+                <span>Status halaman</span
+                ><span class="stat-icon purple">▣</span>
+              </div>
+              <div class="stat-number">Statis</div>
+              <div class="stat-foot">Belum terhubung database</div>
+            </article>
           </div>
-        </section>
-      </div>
-
-      <footer class="footer">
-        © <span id="yearNow"></span> Sistem Peminjaman Inventaris <span>•</span> Versi HTML statis
-      </footer>
-    </main>
-  </div>
-  <script src="assets/app.js"></script>
-</body>
+          <section class="panel">
+            <div class="panel-heading">
+              <div>
+                <h2>Mulai dari sini</h2>
+                <p class="muted">Navigasi dasar sesuai persyaratan tugas.</p>
+              </div>
+            </div>
+            <p>
+              Fungsi dari laman ini sebagai daftar data untuk melihat contoh tabel dan membuka
+              form tambah atau edit. Form hanya menjalankan validasi wajib isi 
+              data di masukkan di sini disimpan dikarenakan html ini masih berupa laman statis
+            </p>
+            <a class="btn primary" href="barang.html">Buka Data Barang</a>
+          </section>
+        </div>
+        <footer class="footer">
+          © <span id="yearNow"></span> Sistem Peminjaman Inventaris
+          <span>•</span> HTML statis
+        </footer>
+      </main>
+    </div>
+    <script src="assets/app.js"></script>
+  </body>
 </html>
