@@ -1,146 +1,159 @@
 <!doctype html>
 <html lang="id">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Data Barang — Inventaris Kampus</title>
-  <link rel="stylesheet" href="assets/style.css">
-</head>
-<body>
-  <div class="app-layout">
-    <aside class="sidebar" id="sidebar">
-      <a href="dashboard.html" class="brand">
-        <span class="brand-mark">IK</span>
-        <span>
-          <strong>Inventaris</strong>
-          <small>Campus system</small>
-        </span>
-      </a>
-      <div class="nav-label">MENU UTAMA</div>
-      <nav>
-        <a class="nav-link " href="dashboard.html"><span>▦</span> Dashboard</a>
-        <a class="nav-link active" href="barang.html"><span>▤</span> Data Barang</a>
-        <a class="nav-link " href="kategori.html"><span>▧</span> Kategori</a>
-        <a class="nav-link " href="peminjaman.html"><span>⇄</span> Peminjaman</a>
-        <a class="nav-link " href="pengguna.html"><span>♙</span> Pengguna</a>
-      </nav>
-      <div class="sidebar-bottom">
-        <div class="side-tip">
-          <span>✦</span>
-          <strong>Catatan</strong>
-          <p>Ini versi statis untuk demonstrasi. Perubahan data tidak disimpan ke database.</p>
-        </div>
-        <a class="nav-link" href="login.html"><span>↪</span> Keluar</a>
-      </div>
-    </aside>
-
-    <main class="main-area">
-      <header class="topbar">
-        <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">☰</button>
-        <div>
-          <div class="breadcrumb">Workspace <span>/</span> Data Barang</div>
-          <div class="top-title">Data Barang</div>
-        </div>
-        <div class="top-user">
-          <div class="date-clock">
-            <span id="liveDate">Memuat tanggal...</span>
-            <strong id="liveClock">--:--:--</strong>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Data Barang — Inventaris Kampus</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <div class="app-layout">
+      <aside class="sidebar" id="sidebar">
+        <a href="dashboard.html" class="brand"
+          ><span class="brand-mark">IK</span
+          ><span
+            ><strong>Inventaris</strong><small>Campus system</small></span
+          ></a
+        >
+        <div class="nav-label">MENU UTAMA</div>
+        <nav>
+          <a class="nav-link" href="dashboard.html"><span>▦</span> Dashboard</a
+          ><a class="nav-link active" href="barang.html"
+            ><span>▤</span> Data Barang</a
+          >
+        </nav>
+        <div class="sidebar-bottom">
+          <div class="side-tip">
+            <span>✦</span><strong>Catatan</strong>
+            <p>
+              HTML ini untuk demonstrasi saja. Jadi data yang di masukkan tidak disimpan ke
+              database.
+            </p>
           </div>
-          <div class="avatar">A</div>
-          <div class="user-name">
-            <strong>Administrator</strong>
-            <small>Demo statis</small>
-          </div>
+          <a class="nav-link" href="login.html"><span>↪</span> Keluar</a>
         </div>
-      </header>
-
-      <div class="page-content">
-        <div class="page-heading">
+      </aside>
+      <main class="main-area">
+        <header class="topbar">
+          <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">
+            ☰
+          </button>
           <div>
-            <h1>Inventaris barang kampus</h1>
-            <p class="muted">Berikut data contoh untuk tampilan statis.</p>
+            <div class="breadcrumb">Workspace <span>/</span> Data Barang</div>
+            <div class="top-title">Data Barang</div>
           </div>
-          <a class="btn primary" href="barang-form.html">＋ Tambah barang</a>
-        </div>
-
-        <section class="panel">
-          <div class="panel-heading">
-            <div>
-              <h2>Daftar data barang</h2>
-              <p class="muted">Data tidak terhubung ke database.</p>
+          <div class="top-user">
+            <div class="date-clock">
+              <span id="liveDate">Memuat tanggal...</span
+              ><strong id="liveClock">--:--:--</strong>
+            </div>
+            <div class="avatar">A</div>
+            <div class="user-name">
+              <strong>Administrator</strong><small>Ini Hanya Demo</small>
             </div>
           </div>
-          <div class="table-wrap">
-            <table>
-              <thead>
-                <tr>
-                  <th>Kode</th>
-                  <th>Nama barang</th>
-                  <th>Kategori</th>
-                  <th>Lokasi</th>
-                  <th>Stok total</th>
-                  <th>Tersedia</th>
-                  <th>Kondisi</th>
-                  <th>Aksi</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>BRG-001</td>
-                  <td>Proyektor Epson</td>
-                  <td>Elektronik</td>
-                  <td>Ruang A101</td>
-                  <td>5</td>
-                  <td>4</td>
-                  <td><span class="status baik">Baik</span></td>
-                </tr>
-                <tr>
-                  <td>BRG-002</td>
-                  <td>Laptop Lenovo</td>
-                  <td>Elektronik</td>
-                  <td>Lab Komputer</td>
-                  <td>8</td>
-                  <td>6</td>
-                  <td><span class="status baik">Baik</span></td>
-                </tr>
-                <tr>
-                  <td>BRG-003</td>
-                  <td>Kamera DSLR</td>
-                  <td>Multimedia</td>
-                  <td>Studio</td>
-                  <td>3</td>
-                  <td>2</td>
-                  <td><span class="status perlu_perbaikan">Perlu perbaikan</span></td>
-                </tr>
-                <tr>
-                  <td>BRG-004</td>
-                  <td>Mikroskop Digital</td>
-                  <td>Laboratorium</td>
-                  <td>Lab Biologi</td>
-                  <td>4</td>
-                  <td>4</td>
-                  <td><span class="status baik">Baik</span></td>
-                </tr>
-                <tr>
-                  <td>BRG-005</td>
-                  <td>Tripod Kamera</td>
-                  <td>Multimedia</td>
-                  <td>Studio</td>
-                  <td>6</td>
-                  <td>5</td>
-                  <td><span class="status baik">Baik</span></td>
-                </tr>
-              </tbody>
-            </table>
+        </header>
+        <div class="page-content">
+          <div class="page-heading">
+            <div>
+              <h1>Daftar data barang inventaris</h1>
+              <p class="muted">
+                Data contoh untuk tampilan daftar data statis.
+              </p>
+            </div>
+            <a class="btn primary" href="form.html">＋ Tambah data</a>
           </div>
-        </section>
-      </div>
-
-      <footer class="footer">
-        © <span id="yearNow"></span> Sistem Peminjaman Inventaris <span>•</span> Versi HTML statis
-      </footer>
-    </main>
-  </div>
-  <script src="assets/app.js"></script>
-</body>
+          <section class="panel">
+            <div class="panel-heading">
+              <div>
+                <h2>Data barang inventaris</h2>
+                <p class="muted">Contoh data — perubahan tidak disimpan.</p>
+              </div>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Kode</th>
+                    <th>Nama barang</th>
+                    <th>Kategori</th>
+                    <th>Lokasi</th>
+                    <th>Jumlah</th>
+                    <th>Kondisi</th>
+                    <th>Aksi</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>INV-001</td>
+                    <td>Proyektor Epson</td>
+                    <td>Elektronik</td>
+                    <td>Ruang A101</td>
+                    <td>5</td>
+                    <td><span class="status baik">Baik</span></td>
+                    <td>
+                      <a class="text-link" href="form.html?mode=edit">Edit</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>INV-002</td>
+                    <td>Laptop Lenovo</td>
+                    <td>Elektronik</td>
+                    <td>Lab Komputer</td>
+                    <td>8</td>
+                    <td><span class="status baik">Baik</span></td>
+                    <td>
+                      <a class="text-link" href="form.html?mode=edit">Edit</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>INV-003</td>
+                    <td>Kamera DSLR</td>
+                    <td>Multimedia</td>
+                    <td>Studio</td>
+                    <td>3</td>
+                    <td>
+                      <span class="status perlu_perbaikan"
+                        >Perlu perbaikan</span
+                      >
+                    </td>
+                    <td>
+                      <a class="text-link" href="form.html?mode=edit">Edit</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>INV-004</td>
+                    <td>Mikroskop Digital</td>
+                    <td>Laboratorium</td>
+                    <td>Lab Biologi</td>
+                    <td>4</td>
+                    <td><span class="status baik">Baik</span></td>
+                    <td>
+                      <a class="text-link" href="form.html?mode=edit">Edit</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>INV-005</td>
+                    <td>Tripod Kamera</td>
+                    <td>Multimedia</td>
+                    <td>Studio</td>
+                    <td>6</td>
+                    <td><span class="status baik">Baik</span></td>
+                    <td>
+                      <a class="text-link" href="form.html?mode=edit">Edit</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+        <footer class="footer">
+          © <span id="yearNow"></span> Sistem Peminjaman Inventaris
+          <span>•</span> HTML statis
+        </footer>
+      </main>
+    </div>
+    <script src="assets/app.js"></script>
+  </body>
 </html>
